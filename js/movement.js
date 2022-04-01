@@ -1,5 +1,7 @@
 //keys  
-
+$('#infoClef').hide();
+$('#infoTS').hide();
+// and hiding the others
 
   $('body').keydown(function(event){ //I NEED A WAY TO MOVE BETTER
     //move down
@@ -65,18 +67,18 @@ class line{
 }
 
 // INSTANCES 
-var lineE = new line ("lineE", 30, 569, 7, 1425); //left, up, height, width
-var lineG = new line ("lineG", 30, 490, 7, 1425);
-var lineB = new line ("lineB", 30, 411, 7, 1425);
-var lineD = new line ("lineD", 30, 332, 7, 1425);
-var lineF = new line ("lineF", 30, 253, 7, 1425);
+var infoLineE = new line ("lineE", 30, 569, 7, 1425); //left, up, height, width
+var infoLineG = new line ("lineG", 30, 490, 7, 1425);
+var infoLineB = new line ("lineB", 30, 411, 7, 1425);
+var infoLineD = new line ("lineD", 30, 332, 7, 1425);
+var infoLineF = new line ("lineF", 30, 253, 7, 1425);
 
 
-var arrTargets = ["#lineE","#lineG", "#lineB", "#lineD", "#lineF"];
- 
+var arrTargets = ["#lineE", "#lineG", "#lineB", "#lineD" , "#lineF", "#clef", "#TS"];
+
 function getPositions(box) {
-  console.log('position:')
-  console.log(box);
+  //console.log('position:')
+  //console.log(box);
   var $box = $(box);
   var pos = $box.position();
   var width = $box.width();
@@ -96,38 +98,44 @@ function checkMultipleCollisions(){
   }
 }
  
-function checkCollisions(target, theCharacter){
- 
-    var box = $(target)[0];
-    var pos = getPositions(box);
-    var chr = $(theCharacter);
-    var pos2 = getPositions(chr);
-    var horizontalMatch = comparePositions(pos[0], pos2[0]);
-    var verticalMatch = comparePositions(pos[1], pos2[1]);            
-    var match = horizontalMatch && verticalMatch;
-    if (match) { $("body").append("<p>COLLISION !!!</p>"); }
-    //casewhere will make a comeback
+function checkCollisions(arrTargets, theCharacter){
+
+  var box = $(arrTargets)[0];
+  var pos = getPositions(box);
+  var chr = $(theCharacter);
+  var pos2 = getPositions(chr);
+  var horizontalMatch = comparePositions(pos[0], pos2[0]);
+  var verticalMatch = comparePositions(pos[1], pos2[1]);            
+  var match = horizontalMatch && verticalMatch;
+  if (match) { 
     var itemName = $(box).attr('id');
     itemHit = "#" + itemName;
     switch (itemName){
       case 'lineE':
-          $('.player').animate({"top": "-=50px"}, 0.00001);
+          console.log('line E')
           break;
       case 'lineG':
-          $('.player').animate({"top": "+=50px"}, 0.00001);
+          console.log('line G')
           break;
       case 'lineB':
-          $('.player').animate({"left": "+=50px"}, 0.00001);
+          console.log('line B')
           break;
       case 'lineD':
-          $('.player').animate({"left": "-=50px"}, 0.00001);
+          console.log('line D')
           break;
       case 'lineF':
-          $('#gameover').show(); 
-          $('#tryAgain').show();
-          $('.player').toggle("explode", 300);
-          $('#finish').css("background-color", "yellow");
-          // clearInterval(enemy1Interval) //keeps animating unless only 1 animation is performed
-          // clearInterval(enemy2Interval)
+          console.log('lineF')
+          break;
+      case 'clef':
+          console.log('clef')
+          $('#infoClef').show();
+          $('#infoTS').hide();
+          break;
+      case 'TS':
+          console.log('TS')
+          $('#infoTS').show();
+          $('#infoClef').hide();
+          break;
     }
-}
+  }
+  }
