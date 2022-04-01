@@ -1,0 +1,368 @@
+body{
+    font-size: 15px;
+    background-color: rgb(195, 214, 255);
+    font-family: sans-serif; 
+    color:beige;
+    background-image: url(../images/cloud.jpg);
+    background-size: cover;
+}
+
+h1{
+    top:-10px;
+    position: absolute;
+    left: 630px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#background{ /*maybe a div FOR BACKGROUND SOURCE but why is there a */
+    height: 846px;
+    width: 1475px;
+
+}
+#branch{
+    position: absolute;
+    z-index: -1;
+    height: 670px;
+    width: 1478px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+.buttons{
+    top:0px;
+    right:0px;
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    margin-right: 50px;
+    margin-top: 10px;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#btnMenu{
+    left: 70px;
+}
+
+#btnPlay{
+    right:130px;
+}
+
+#btnBack{
+    left: 10px;
+    border-radius: 50px;
+    width: 50px;
+}
+
+#bar{
+    background-color: rgb(255, 173, 51);
+    top: 0px;
+    position: absolute;
+    height: 70px;
+    width: 1500px;
+    z-index: -1;
+    background-image: url("../images/temmiBird.png");
+    background-repeat: no-repeat;
+    background-position-y: -250px;
+    background-position-x: 200px;
+    background-size: 300px;
+
+
+}
+
+/* birds */
+
+.birds{
+    width: 180px;
+    height: 200px;
+    /*border: 1px solid #fff;*/
+    
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.c{
+    background-image: url("../images/cBird.png");
+    background-size: 200px;
+    background-position: 35% 50%;
+    left: 50px;
+    bottom: 70px;
+    height: 250px;
+}
+
+.d{
+    background-image: url("../images/dBird.png");
+    background-size: 200px;
+    bottom: 37px;
+    background-position: 50% 50%;
+    left: 210px;
+    width: 160px;
+
+
+}
+
+.e{
+    background-image: url("../images/eBird.png");
+    background-size: 260px;
+    background-position: 38% 50%;
+    left: 362px;
+    height: 300px;
+    bottom: 50px;
+
+}
+
+.f{
+    background-image: url("../images/fBird.png");
+    background-size: 220px;
+    background-position: 46% 50%;
+    left: 540px;
+    height: 265px;
+    width: 160px;
+    bottom: 65px;
+
+}
+
+.g{
+    background-image:url("../images/gBird.png");
+    background-size: 250px;
+    background-position: 35% 50%;
+    right: 585px;
+    bottom: 130px;
+
+}
+
+.a{
+    background-image: url("../images/aBird.png");
+    background-size: 250px;
+    background-position: 35% 50%;
+    right: 400px;
+    bottom:130px;;
+    height: 200px;
+
+}
+
+.b{
+    background-image: url("../images/bBird.png");
+    background-size: 230px;
+    background-position: 60% 50%;
+    right: 215px;
+    bottom: 140px;
+    height: 220px;
+}
+
+.c2{
+    background-image: url("../images/c2Bird.png");
+    background-size: 148px;
+    background-position: 10% 50%;
+    width: 154px;
+    right: 60px;
+    bottom: 160px;
+    position: absolute;
+
+}
+  
+
+  /* staves */
+  #stave{
+      height: 200px; 
+      width: 1490px;
+      position: relative;
+      top: 90px;
+  }
+
+  #stave2{
+    height: 200px; 
+    width: 1490px;
+    position: relative;
+    top: 110px;
+}
+
+.staveLines{
+      background-color: black;
+      width: 10px;
+      height: 142px;
+      position: absolute;
+      top: 125px;
+}
+
+.staveLines2{
+    background-color: black;
+    width: 10px;
+    height: 144px;
+    position: absolute;
+    bottom: 375px;
+}
+
+#staveLine1, #staveLine5 {
+    left: 53px;
+}
+
+#staveLine2, #staveLine6{
+      right: 80px;
+      width: 5px;
+}
+
+#staveLine3, #staveLine7{
+    right: 55px;
+}
+
+#staveLine4, #staveLine8{
+    width: 5px;
+    right: 660px;
+}
+
+#clef{
+      height: 255px;
+      width: 140px;
+      top: 80px;
+      left: 60px;
+      position: absolute;
+}
+
+#clef2{
+    height: 255px;
+    width: 140px;
+    top: 307px;
+    left: 60px;
+    position: absolute;
+}
+
+#timeSignature{
+      height: 210px;
+      width: 110px;
+      top: 96px;
+      left: 170px;
+      position: absolute;
+}
+
+#timeSignature2{
+    height: 210px;
+    width: 110px;
+    top: 320px;
+    left: 170px;
+    position: absolute;
+}
+
+
+
+
+
+
+/* crotchet placements good luck: */
+.crotchet1, .crotchet2, .crotchet3, .crotchet4, .crotchet5, .crotchet6, .crotchet7, .crotchet8, .crotchet9, .crotchet10, .crotchet11, .crotchet12, .crotchet13, .crotchet14, .crotchet15, .crotchet16{
+    /* ALL crotchet dimensions */
+      height: 150px;
+      width: 150px;
+      position: absolute;
+}
+
+.crotchet1, .crotchet9{
+    left: 250px;
+}
+.crotchet2, .crotchet10{
+    left: 385px;
+}
+/* 135 pixels difference 4 beats in a bar */
+.crotchet3, .crotchet11{
+    left: 520px;
+}
+.crotchet4, .crotchet12{
+    left: 655px;
+}
+.crotchet5, .crotchet13{
+    left: 835px;
+}
+.crotchet6, .crotchet14{
+    left: 970px;
+}
+.crotchet7, .crotchet15{
+    left: 1105px;
+}
+.crotchet8, .crotchet16{
+    left: 1240px;
+}
+
+/* C NOTE STAFF 1 PLACEMENTS */
+#cCrotchet1, #cCrotchet2, #cCrotchet3, #cCrotchet4, #cCrotchet5, #cCrotchet6, #cCrotchet7, #cCrotchet8{
+    top: 170px;
+}
+/* C NOTE STAFF 2 PLACEMENTS */
+#cCrotchet9, #cCrotchet10, #cCrotchet11, #cCrotchet12, #cCrotchet13, #cCrotchet14, #cCrotchet15, #cCrotchet16{
+    top: 395px;
+}
+
+/* D NOTE STAFF 1 PLACEMENTS */
+#dCrotchet1, #dCrotchet2, #dCrotchet3, #dCrotchet4, #dCrotchet5, #dCrotchet6, #dCrotchet7, #dCrotchet8{
+    top: 153px;
+}
+/* D NOTE STAFF 2 PLACEMENTS */
+#dCrotchet9, #dCrotchet10, #dCrotchet11, #dCrotchet12, #dCrotchet13, #dCrotchet14, #dCrotchet15, #dCrotchet16{
+    top: 378px;
+}
+
+
+/* E NOTE STAFF 1 PLACEMENTS */
+#eCrotchet1, #eCrotchet2, #eCrotchet3, #eCrotchet4, #eCrotchet5, #eCrotchet6, #eCrotchet7, #eCrotchet8{
+    top: 135px;
+}
+/* E NOTE STAFF 2 PLACEMENTS */
+#eCrotchet9, #eCrotchet10, #eCrotchet11, #eCrotchet12, #eCrotchet13, #eCrotchet14, #eCrotchet15, #eCrotchet16{
+    top: 361px;
+}
+
+/* F NOTE STAFF 1 PLACEMENTS */
+#fCrotchet1, #fCrotchet2, #fCrotchet3, #fCrotchet4, #fCrotchet5, #fCrotchet6, #fCrotchet7, #fCrotchet8{
+    top: 118px;
+}
+/* F NOTE STAFF 2 PLACEMENTS */
+#fCrotchet9, #fCrotchet10, #fCrotchet11, #fCrotchet12, #fCrotchet13, #fCrotchet14, #fCrotchet15, #fCrotchet16{
+    top: 343px;
+}
+
+/* G NOTE STAFF 1 PLACEMENTS */
+#gCrotchet1, #gCrotchet2, #gCrotchet3, #gCrotchet4, #gCrotchet5, #gCrotchet6, #gCrotchet7, #gCrotchet8{
+    top: 100px;
+}
+/* G NOTE STAFF 2 PLACEMENTS */
+#gCrotchet9, #gCrotchet10, #gCrotchet11, #gCrotchet12, #gCrotchet13, #gCrotchet14, #gCrotchet15, #gCrotchet16{
+    top: 326px;
+}
+
+/* A NOTE STAFF 1 PLACEMENTS */
+#aCrotchet1, #aCrotchet2, #aCrotchet3, #aCrotchet4, #aCrotchet5, #aCrotchet6, #aCrotchet7, #aCrotchet8{
+    top: 83px;
+}
+/* A NOTE STAFF 2 PLACEMENTS */
+#aCrotchet9, #aCrotchet10, #aCrotchet11, #aCrotchet12, #aCrotchet13, #aCrotchet14, #aCrotchet15, #aCrotchet16{
+    top: 307px;
+}
+
+/* B2 NOTE STAFF 1 PLACEMENTS */
+#bCrotchet1, #bCrotchet2, #bCrotchet3, #bCrotchet4, #bCrotchet5, #bCrotchet6, #bCrotchet7, #bCrotchet8{
+    top: 175px;
+}
+/* B2 NOTE STAFF 2 PLACEMENTS */
+#bCrotchet9, #bCrotchet10, #bCrotchet11, #bCrotchet12, #bCrotchet13, #bCrotchet14, #bCrotchet15, #bCrotchet16{
+    bottom: 320px;
+}
+
+/* C2 NOTE STAFF 1 PLACEMENTS */
+#c2Crotchet1, #c2Crotchet2, #c2Crotchet3, #c2Crotchet4, #c2Crotchet5, #c2Crotchet6, #c2Crotchet7, #c2Crotchet8{
+    top: 160px;
+}
+/* C2 NOTE STAFF 2 PLACEMENTS */
+#c2Crotchet9, #c2Crotchet10, #c2Crotchet11, #c2Crotchet12, #c2Crotchet13, #c2Crotchet14, #c2Crotchet15, #c2Crotchet16{
+    bottom: 334px;
+}
+
+
+
+

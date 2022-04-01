@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title> Music game </title>
+        <link rel="stylesheet" href="css/composing.css"/>
+        <link rel="icon" type="image/jpg" href="images/aBird.png">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+       <!-- <button class="notes" id = "btnA" >Note a</button>
+        <div id= "noteName"></div> -->
+
+        <img id="branch" src="../!major/images/branch.png" alt="">
+        <div id="box"></div>
+
+        <div class="staveLines" id="staveLine1"></div>
+        <div class="staveLines" id="staveLine2"></div>
+        <div class="staveLines" id="staveLine3"></div>
+        <div class="staveLines" id="staveLine4"></div>
+    
+        <img id="stave" src="../!major/images/stave lines.png">
+        <img id="clef" src="../!major/images/trebleClef.png">
+        <img id="timeSignature" src="../!major/images/timeSignature.png">
+
+
+        <div class="staveLines2" id="staveLine5"></div>
+        <div class="staveLines2" id="staveLine6"></div>
+        <div class="staveLines2" id="staveLine7"></div>
+        <div class="staveLines2" id="staveLine8"></div>
+        <img id="stave2" src="../!major/images/stave lines.png">
+        <img id="clef2" src="../!major/images/trebleClef.png">
+        <img id="timeSignature2" src="../!major/images/timeSignature.png">
+
+
+
+
+        <!--1ST POSITION-->
+        <div>
+            <!-- !!!!!!!!!!!!!!!!! xCrotchety where x = note and y = position !!!!!!!!!!!!!!!!!!!!!!-->
+        <img class="crotchet1" id="cCrotchet1" src="../!major/images/crotchetC.png"></img>
+        <!--add the line in procreate with the same file send on discord then edit to change on ipad and send back so the dimensions are the same-->
+        <img class="crotchet1" id="dCrotchet1" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet1" id="eCrotchet1" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet1" id="fCrotchet1" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet1" id="gCrotchet1" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet1" id="aCrotchet1" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet1" id="bCrotchet1" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet1" id="c2Crotchet1" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet1" id="d2Crotchet1" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet1" id="e2Crotchet1" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet1" id="f2Crotchet1" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet1" id="g2Crotchet1" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet1" id="a2Crotchet1" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--2ND POSITION-->
+        <div>
+        <img class="crotchet2" id="cCrotchet2" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet2" id="dCrotchet2" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet2" id="eCrotchet2" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet2" id="fCrotchet2" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet2" id="gCrotchet2" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet2" id="aCrotchet2" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet2" id="bCrotchet2" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet2" id="c2Crotchet2" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet2" id="d2Crotchet2" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet2" id="e2Crotchet2" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet2" id="f2Crotchet2" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet2" id="g2Crotchet2" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet2" id="a2Crotchet2" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--3RD POSITION-->
+        <div>
+        <img class="crotchet3" id="cCrotchet3" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet3" id="dCrotchet3" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet3" id="eCrotchet3" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet3" id="fCrotchet3" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet3" id="gCrotchet3" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet3" id="aCrotchet3" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet3" id="bCrotchet3" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet3" id="c2Crotchet3" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet3" id="d2Crotchet3" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet3" id="e2Crotchet3" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet3" id="f2Crotchet3" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet3" id="g2Crotchet3" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet3" id="a2Crotchet3" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--4TH POSITION-->
+        <div>
+        <img class="crotchet4" id="cCrotchet4" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet4" id="dCrotchet4" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet4" id="eCrotchet4" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet4" id="fCrotchet4" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet4" id="gCrotchet4" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet4" id="aCrotchet4" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet4" id="bCrotchet4" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet4" id="c2Crotchet4" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet4" id="d2Crotchet4" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet4" id="e2Crotchet4" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet4" id="f2Crotchet4" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet4" id="g2Crotchet4" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet4" id="a2Crotchet4" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--5TH POSITION-->
+        <div>
+        <img class="crotchet5" id="cCrotchet5" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet5" id="dCrotchet5" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet5" id="eCrotchet5" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet5" id="fCrotchet5" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet5" id="gCrotchet5" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet5" id="aCrotchet5" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet5" id="bCrotchet5" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet5" id="c2Crotchet5" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet5" id="d2Crotchet5" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet5" id="e2Crotchet5" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet5" id="f2Crotchet5" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet5" id="g2Crotchet5" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet5" id="a2Crotchet5" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--6TH POSITION-->
+        <div>
+        <img class="crotchet6" id="cCrotchet6" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet6" id="dCrotchet6" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet6" id="eCrotchet6" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet6" id="fCrotchet6" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet6" id="gCrotchet6" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet6" id="aCrotchet6" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet6" id="bCrotchet6" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet6" id="c2Crotchet6" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet6" id="d2Crotchet6" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet6" id="e2Crotchet6" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet6" id="f2Crotchet6" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet6" id="g2Crotchet6" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet6" id="a2Crotchet6" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--7TH POSITION-->
+        <div>
+        <img class="crotchet7" id="cCrotchet7" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet7" id="dCrotchet7" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet7" id="eCrotchet7" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet7" id="fCrotchet7" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet7" id="gCrotchet7" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet7" id="aCrotchet7" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet7" id="bCrotchet7" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet7" id="c2Crotchet7" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet7" id="d2Crotchet7" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet7" id="e2Crotchet7" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet7" id="f2Crotchet7" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet7" id="g2Crotchet7" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet7" id="a2Crotchet7" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--8TH POSITION finally...-->
+        <div>
+        <img class="crotchet8" id="cCrotchet8" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet8" id="dCrotchet8" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet8" id="eCrotchet8" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet8" id="fCrotchet8" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet8" id="gCrotchet8" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet8" id="aCrotchet8" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet8" id="bCrotchet8" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet8" id="c2Crotchet8" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet8" id="d2Crotchet8" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet8" id="e2Crotchet8" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet8" id="f2Crotchet8" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet8" id="g2Crotchet8" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet8" id="a2Crotchet8" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--jk there's another set 9TH POSITION-->
+        <div>
+        <img class="crotchet9" id="cCrotchet9" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet9" id="dCrotchet9" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet9" id="eCrotchet9" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet9" id="fCrotchet9" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet9" id="gCrotchet9" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet9" id="aCrotchet9" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet9" id="bCrotchet9" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet9" id="c2Crotchet9" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet9" id="d2Crotchet9" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet9" id="e2Crotchet9" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet9" id="f2Crotchet9" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet9" id="g2Crotchet9" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet9" id="a2Crotchet9" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+
+        <!--10TH POSITION-->
+        <div>
+        <img class="crotchet10" id="cCrotchet10" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet10" id="dCrotchet10" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet10" id="eCrotchet10" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet10" id="fCrotchet10" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet10" id="gCrotchet10" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet10" id="aCrotchet10" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet10" id="bCrotchet10" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet10" id="c2Crotchet10" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet10" id="d2Crotchet10" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet10" id="e2Crotchet10" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet10" id="f2Crotchet10" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet10" id="g2Crotchet10" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet10" id="a2Crotchet10" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--11TH POSITION-->
+        <div>
+        <img class="crotchet11" id="cCrotchet11" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet11" id="dCrotchet11" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet11" id="eCrotchet11" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet11" id="fCrotchet11" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet11" id="gCrotchet11" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet11" id="aCrotchet11" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet11" id="bCrotchet11" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet11" id="c2Crotchet11" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet11" id="d2Crotchet11" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet11" id="e2Crotchet11" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet11" id="f2Crotchet11" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet11" id="g2Crotchet11" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet11" id="a2Crotchet11" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--12TH POSITION-->
+        <div>
+        <img class="crotchet12" id="cCrotchet12" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet12" id="dCrotchet12" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet12" id="eCrotchet12" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet12" id="fCrotchet12" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet12" id="gCrotchet12" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet12" id="aCrotchet12" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet12" id="bCrotchet12" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet12" id="c2Crotchet12" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet12" id="d2Crotchet12" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet12" id="e2Crotchet12" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet12" id="f2Crotchet12" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet12" id="g2Crotchet12" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet12" id="a2Crotchet12" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--13TH POSITION-->
+        <div>
+        <img class="crotchet13" id="cCrotchet13" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet13" id="dCrotchet13" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet13" id="eCrotchet13" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet13" id="fCrotchet13" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet13" id="gCrotchet13" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet13" id="aCrotchet13" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet13" id="bCrotchet13" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet13" id="c2Crotchet13" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet13" id="d2Crotchet13" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet13" id="e2Crotchet13" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet13" id="f2Crotchet13" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet13" id="g2Crotchet13" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet13" id="a2Crotchet13" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--14TH POSITION-->
+        <div>
+        <img class="crotchet14" id="cCrotchet14" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet14" id="dCrotchet14" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet14" id="eCrotchet14" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet14" id="fCrotchet14" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet14" id="gCrotchet14" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet14" id="aCrotchet14" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet14" id="bCrotchet14" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet14" id="c2Crotchet14" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet14" id="d2Crotchet14" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet14" id="e2Crotchet14" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet14" id="f2Crotchet14" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet14" id="g2Crotchet14" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet14" id="a2Crotchet14" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <!--15 POSITION-->
+        <div>
+        <img class="crotchet15" id="cCrotchet15" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet15" id="dCrotchet15" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet15" id="eCrotchet15" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet15" id="fCrotchet15" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet15" id="gCrotchet15" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet15" id="aCrotchet15" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet15" id="bCrotchet15" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet15" id="c2Crotchet15" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet15" id="d2Crotchet15" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet15" id="e2Crotchet15" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet15" id="f2Crotchet15" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet15" id="g2Crotchet15" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet15" id="a2Crotchet15" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+
+        <!--16TH POSITION-->
+        <div>
+        <img class="crotchet16" id="cCrotchet16" src="../!major/images/crotchetC.png"></img>
+        <img class="crotchet16" id="dCrotchet16" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet16" id="eCrotchet16" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet16" id="fCrotchet16" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet16" id="gCrotchet16" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet16" id="aCrotchet16" src="../!major/images/crotchet.png"></img>
+        <img class="crotchet16" id="bCrotchet16" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet16" id="c2Crotchet16" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet16" id="d2Crotchet16" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet16" id="e2Crotchet16" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet16" id="f2Crotchet16" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet16" id="g2Crotchet16" src="../!major/images/ucrotchet.png"></img>
+        <img class="crotchet16" id="a2Crotchet16" src="../!major/images/ucrotchet.png"></img>
+        </div>
+
+        <h1>not formal time but Composing time</h1>
+
+        <button class="buttons" id="btnMenu" onclick= "location.href='./Menu.htm'"> Main Menu </button>
+        <button class="buttons" id="btnReset"> Reset Notes</button> 
+        <button class="buttons" id="btnPlay">Play Notes</button>
+        <button class="buttons" id="btnBack" onclick= "location.href='./choosesomething.htm'"><-</button>
+        <div id="bar"></div>
+
+        <!-- AUDIO -->
+        <div>
+            <audio id = "cNote">
+                <source src = "./audio/cNote.mp3" type="audio/mpeg" preload="auto">
+            </audio>
+            <audio id = "dNote">
+                <source src = "./audio/dNote.mp3" type="audio/mpeg">
+            </audio>
+            <audio id = "eNote">
+                <source src = "./audio/eNote.mp3" type="audio/mpeg">
+            </audio>
+            <audio id = "fNote">
+                <source src = "./audio/fNote.mp3" type="audio/mpeg">
+            </audio>
+            <audio id = "gNote">
+                <source src = "./audio/gNote.mp3" type="audio/mpeg">
+            </audio>
+            <audio id = "aNote">
+                <source src = "./audio/aNote.mp3" type="audio/mpeg">
+            </audio>
+            <audio id = "bNote">
+                <source src = "./audio/bNote.mp3" type="audio/mpeg">
+            </audio>
+            <audio id = "c2Note">
+                <source src = "./audio/c2Note.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="js/composing.js"></script>
+    </body>
+
+</html>

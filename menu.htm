@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title> Music game </title>
+        <link rel="stylesheet" href="css/menu.css"/>
+        <link rel="icon" type="image/jpg" href="images/aBird.png">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Move to new screen-->
+        <button class = "menuButton" onclick= "location.href='./choosesomething.htm'" id='go'>START</button>
+
+        <h1> music <!--<br>--> game</h1>
+
+        <img id="bird" src="images/hello.png" >
+
+        <!-- AUDIO SOUND -->
+        
+        <!-- Playable audio WITH CONTROLS
+        <audio controls>
+            <source src="./audio/intro2.mp3" type="audio/mpeg">
+        </audio>
+    -->
+        <div>
+            
+            <audio id = "audio">
+                <source src = "./audio/bird.mp3" type="audio/mpeg">
+            </audio>
+
+            <button class= "menuButton" id="playPauseBTN" onclick="playPause()">TEST VOLUME &#9658</button>
+                &nbsp;
+                &nbsp; 
+             <!-- <button id="Stop" onclick ="stop()">Stop &#9611</button> -->
+
+        </div>
+
+        
+
+
+    <script type="text/javascript" src="js/menu.js"></script>
+    </body>
+
+</html>

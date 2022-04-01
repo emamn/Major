@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Music game </title>
+    <link rel="stylesheet" href="css/movement.css">
+    <link rel="icon" type="image/jpg" href="images/aBird.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+</head>
+<body>
+
+<div class="player"></div>
+<img id="clef" src="../!major/images/trebleClef.png"></img>
+
+<!--I could've made these myself with a div.
+<img class="line" id="lineE" src="../!major/images/staffLine.png"></img>
+<img class="line" id="lineG" src="../!major/images/staffLine.png"></img>
+<img class="line" id="lineB" src="../!major/images/staffLine.png"></img>
+<img class="line" id="lineD" src="../!major/images/staffLine.png"></img>
+<img class="line" id="lineF" src="../!major/images/staffLine.png"></img> -->
+
+<div class="space" id="spaceF"></div>
+<div class="space" id="spaceA"></div>
+<div class="space" id="spaceC"></div>
+<div class="space" id="spaceE"></div>
+
+<button class="buttons" id="btnBack" onclick= "location.href='./choosesomething.htm'"><-</button>
+<button class="buttons" id="btnMenu" onclick= "location.href='./Menu.htm'"> Main Menu </button>
+<div id="bar"></div>
+<h1>Learning time (in development)</h1>
+
+
+
+<div class="staveLines" id="staveLine1"></div>
+<div class="staveLines" id="staveLine2"></div>
+<div class="staveLines" id="staveLine3"></div>
+
+<div class="infoBox" id="infoClef"></div>
+<div class="infoBox" id="infoTS"></div>
+
+
+<script type="text/javascript" src="js/movement.js"></script>
+</body> 
+</html>

@@ -1,0 +1,58 @@
+body{
+    font-size: 15px;
+    background-color: rgb(253, 211, 211);
+    background-image: url(../images/backgroundPROTO.jpg);
+    background-size: cover;
+    font-family: sans-serif; 
+    /* background-image: url(/!major/images/backgroundPROTO.jpg)  WHY IS THIS BROKEN*/
+}
+
+h1{ /* this is off with console */
+    color: rgb(113, 48, 235);
+    font-family: sans-serif;
+    font-size: 70pt;
+    position: fixed;
+    left: 240px;
+    top: 240px;
+}
+
+.menuButton{
+    background-color: rgb(145, 190, 226);
+    color: rgb(63, 124, 238);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 30px;
+    position: fixed;
+    width: 200px;
+    margin-top: 50px;
+}
+
+#go{ /* START */
+    top: 400px;
+    left: 250px;
+
+}
+
+#playPauseBTN{  /*   class is with menuButton -> TEST VOLUME    */
+    top: 500px;
+    left: 250px;
+}
+
+#bird{
+    left: 975px;
+    top: 150px;
+    height: 600px;
+    position: fixed;
+}
+
+#background{ /*maybe a div FOR BACKGROUND SOURCE but why is there a */
+    height: 846px;
+    width: 1000px;
+    left: 0px;
+    right: 0px;
+
+}
+
+
