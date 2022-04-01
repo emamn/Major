@@ -236,18 +236,18 @@ h1{
 }
 
 #timeSignature{
-      height: 210px;
-      width: 110px;
-      top: 96px;
-      left: 170px;
+      height: 143px;
+      width: 60px;
+      top: 125px;
+      left: 190px;
       position: absolute;
 }
 
 #timeSignature2{
-    height: 210px;
-    width: 110px;
-    top: 320px;
-    left: 170px;
+    height: 143px;
+    width: 60px;
+    top: 350px;
+    left: 190px;
     position: absolute;
 }
 

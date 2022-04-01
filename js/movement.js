@@ -1,6 +1,14 @@
 //keys  
 $('#infoClef').hide();
 $('#infoTS').hide();
+$('#infoE').hide();
+$('#infoG').hide();
+$('#infoB').hide();
+$('#infoD').hide();
+$('#infoF').hide();
+$('#infoClef').hide();
+$('#infoTS').hide();
+
 // and hiding the others
 
   $('body').keydown(function(event){ //I NEED A WAY TO MOVE BETTER
@@ -113,27 +121,82 @@ function checkCollisions(arrTargets, theCharacter){
     switch (itemName){
       case 'lineE':
           console.log('line E')
+          $('#infoE').show();
+          $('#infoTS').hide();
+          $('#infoClef').hide();
+          $('#infoG').hide();
+          $('#infoB').hide();
+          $('#infoD').hide();
+          $('#infoF').hide();
+        
           break;
       case 'lineG':
           console.log('line G')
+          $('#infoTS').hide();
+          $('#infoClef').hide();
+          $('#infoE').hide();
+          $('#infoG').show();
+          $('#infoB').hide();
+          $('#infoD').hide();
+          $('#infoF').hide();
+          $('#infoClef').hide();
+          $('#infoTS').hide();
           break;
       case 'lineB':
           console.log('line B')
+          $('#infoTS').hide();
+          $('#infoClef').hide();
+          $('#infoE').hide();
+          $('#infoG').hide();
+          $('#infoB').show();
+          $('#infoD').hide();
+          $('#infoF').hide();
+          $('#infoClef').hide();
+          $('#infoTS').hide();
           break;
       case 'lineD':
           console.log('line D')
+          $('#infoTS').hide();
+          $('#infoClef').hide();
+          $('#infoE').hide();
+          $('#infoG').hide();
+          $('#infoB').hide();
+          $('#infoD').show();
+          $('#infoF').hide();
+          $('#infoClef').hide();
+          $('#infoTS').hide();
           break;
       case 'lineF':
           console.log('lineF')
+          $('#infoTS').show();
+          $('#infoClef').hide();
+          $('#infoE').hide();
+          $('#infoG').hide();
+          $('#infoB').hide();
+          $('#infoD').hide();
+          $('#infoF').show();
+          $('#infoClef').hide();
+          $('#infoTS').hide();
           break;
       case 'clef':
           console.log('clef')
-          $('#infoClef').show();
           $('#infoTS').hide();
+          $('#infoClef').show();
+          $('#infoE').hide();
+          $('#infoG').hide();
+          $('#infoB').hide();
+          $('#infoD').hide();
+          $('#infoF').hide();
           break;
       case 'TS':
           console.log('TS')
           $('#infoTS').show();
+          $('#infoClef').hide();
+          $('#infoE').hide();
+          $('#infoG').hide();
+          $('#infoB').hide();
+          $('#infoD').hide();
+          $('#infoF').hide();
           $('#infoClef').hide();
           break;
     }
